@@ -1,42 +1,71 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body{
+  background-color: #f2dfce;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body{
+  background-color:#f2dfce;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+h1 h2 h3 h4 p span li a {
+  
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.bookContainer{
+  height:80vh;
+  width:95%;
+  margin:auto;
+ 
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.bookContainer aside{
+  width:42.5%;
+  background:#f8eadd;
+  border-radius:20px;
+  boxShadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding:20px 30px;
+flex-grow:1;
+margin:20px 10px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.bookContainer aside p{
+  line-height:21px;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.floating-toolbar{
+  background:#ffd9d9;
+}
+
+.floating-toolbar-close{
+  background:#ffd9d9;
+
+}
+
+.modal-content-reed{
+  background:#daa4a4;
+
+}
+
+.btn-submit-reed{
+  background:#000;
+}
+.hover-card{
+  background:#f2dfce;
+
+}
+
+.center{
+  text-align:center;
+  font-size:36px;
+  font-weight:300;
+  margin-bottom:4px;
+}
+
+.small{
+  font-size:16px;
+  text-align:center;
+display:block;
+margin-bottom:40px;
 }
