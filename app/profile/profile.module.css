@@ -1,0 +1,80 @@
+/* App Bar */
+.appBar {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 5vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/* Ana container */
+.container {
+    display: flex;
+    flex: 1; /* Esnek alan */
+    justify-content: space-between; /* Alanları yan yana yerleştir */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Sol taraf, form alanları */
+.formSection {
+    width: 40%; /* Sol taraf %40 genişlikte */
+}
+
+/* Input kutuları */
+.inputBox {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Sağ taraf, profil resmi ve buton */
+.profileSection {
+    width: 35%; /* Sağ taraf %35 genişlikte */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Profil resmi */
+.profileImage {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    object-fit: cover; /* Resmin alanı düzgün doldurması için */
+}
+
+/* Güncelle butonu */
+.updateButton {
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.updateButton:hover {
+    background-color: #005bb5;
+}
+
+/* Footer */
+.footer {
+    margin-top: auto; /* Üst alanları doldurduktan sonra footer'ı en alta itmek için */
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center; /* İçeriği ortalamak için */
+}

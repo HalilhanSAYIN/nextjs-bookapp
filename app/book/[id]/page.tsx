@@ -9,7 +9,6 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import { Editor, useDomValue } from 'reactjs-editor'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import Link from 'next/link'
 
 
 export default function BookPage() {

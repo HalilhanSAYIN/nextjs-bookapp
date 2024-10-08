@@ -1,9 +1,14 @@
-body{
-  background-color: #f2dfce;
-}
+
 
 body{
   background-color:#f2dfce;
+  /* Genel layout için */
+
+  height: 100%; /* Tüm sayfanın yüksekliği %100 olmalı */
+  margin: 0; /* Varsayılan margin kaldırılıyor */
+  display: flex;
+  flex-direction: column; /* Sayfa dikey olarak hizalanıyor */
+
 }
 
 h1 h2 h3 h4 p span li a {
