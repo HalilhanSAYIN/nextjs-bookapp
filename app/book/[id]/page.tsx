@@ -9,6 +9,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import { Editor, useDomValue } from 'reactjs-editor'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import Link from 'next/link'
 
 
 export default function BookPage() {
@@ -46,7 +47,10 @@ export default function BookPage() {
             <motion.section transition={{ type: 'spring', damping: 44, mass: 0.75 }}
                 initial={{ opacity: 0, y: -1000 }} animate={{ opacity: 1, y: 0 }} className={styles.appBar}>
                 <div className={styles.leftIcons} >
-                    <i style={{ fontSize: '20px', cursor: 'pointer' }} className="fas fa-chevron-left"></i>
+                    <a href="/">
+                    <i style={{ fontSize: '20px', cursor: 'pointer'}} className="fas fa-chevron-left"></i>
+                    </a>
+                    
                 </div>
                 <div className={styles.title}>  <h2 className={styles.titleStyles}> {selectedBook[0].title}</h2></div>
                 <div className={styles.icons}>

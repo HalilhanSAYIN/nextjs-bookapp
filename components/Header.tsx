@@ -2,6 +2,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import SearchBar from './SearchBar'
 
 export default function Header() {
     return (
@@ -11,7 +12,8 @@ export default function Header() {
                 initial={{ opacity: 0, x: -1000 }} animate={{ opacity: 1, x: 0 }}
             >
                 <h1 style={bookTitleStyle}>Book App</h1>
-                <motion.input type='text' placeholder='Tell me what you want' style={searchInputStyle} initial={{ opacity: 0, x: -1000 }} animate={{ opacity: 1, x: 0 }} />
+                <SearchBar/>
+             
             </motion.div>
 
             <motion.div style={rightContainerStyle}
